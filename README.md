@@ -5,11 +5,13 @@
 ## BOOTSTRAP
 * Use bootstrap to implement rows and columns
 * Use bootstrap classes to provide to style
-## JavaScript
+## JavaScript/Jquery
 * create a new js file and link it to HTML
 * Use Jquery to create funcionality
-## Jquery
+## Code PROCESS
 * Use static p element to apply current day in the header using moment
+* color code each timeblock by using a for loop comparing it to the currentHour
+* add classes based on condition
 
 
 
