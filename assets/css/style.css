@@ -70,7 +70,8 @@ textarea{
   transition: all .3s ease-in-out;
 }
 
-.flex-item {
-  height: 80px;
+.iconify {
+  width: 30px;
 }
+
 
