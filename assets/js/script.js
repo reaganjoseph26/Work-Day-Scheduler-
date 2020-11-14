@@ -7,60 +7,33 @@ $("#currentDay").text(day)
 // WHEN I view the time blocks for that day
 //THEN each time block is color-coded to indicate whether it is in the past, present, or future
 
+var timeBlocksColor = function () {
+    //get the current hour
+    var currentHour = moment().hour();
 
+    //create for loop to go through each hour
+    for (i = 9; i < 18; i++) {
 
-//get the current hour
-var currentHour = moment().hour();
+        // use unique id on each div to loop through each one
+        let timeBlock = $("#time-b" + i);
+        timeBlock.removeClass("past present future")
 
-// place times into array timeblock
+        if (currentHour < i) {
+            timeBlock.addClass("future")
+        }
 
+        else if (currentHour > i) {
+            timeBlock.addClass("past")
 
-var timeArr = $(".time-h").map(function () {
-    console.log(timeArr)
-    
-    return this.id;
-});
+        }
+        else {
+            timeBlock.addClass("present")
+        };
 
-console.log(timeArr)
-
-for (i = 0; i < timeArr.length; i++) {
-    //var parsed = parseInt(i)
-    console.log(timeArr.textContent)
-    if(i > currentHour) {
-        $("test").addClass("future")
     }
 };
 
-
-
-
-//compare the current time agaisnt the timeblocks
-
-// var timeBlocksColor = function () {
-//     time = moment()
-//     //console.log(moment())
-// console.log(currentHour);
-// console.log(time)
-
-// if (time.isAfter(currentHour)) {
-//     console.log(time.isAfter())
-//     $(".col-10").addClass("future")
-// } 
-// else if (time.isSame(currentHour)) {
-//     console.log(time.isAfter())
-//     $(".col-10").addClass("present")
-
-// }
-// else if (time.isBefore(currentHour)) {
-//     console.log((time.isAfter()))
-//     $(".col-10").addClass("hour")
-
-// }
-
-// };
-
-
-//timeBlocksColor()
+timeBlocksColor()
 
 
 
