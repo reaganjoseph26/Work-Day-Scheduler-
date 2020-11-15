@@ -55,15 +55,42 @@ var timeBlocksColor = function () {
 // WHEN I click the save button for that time block
 // THEN the text for that event is saved in local storage
 
+inputValues = [];
 
-    $(".saveBtn").click(function () {
-        inputValues = []
-        var eventInput = $("textarea").val()
-        inputValues.push(eventInput)
+$(".saveBtn").click(function () {
+  
+    var eventInput = $(this).closest(".row").find(".textarea").val()
+    .trim()
+    // console.log(eventInput)
+    inputValues.push(eventInput);
 
-        console.log(inputValues)
-        localStorage.setItem("inputValues", JSON.stringify(inputValues))
-    });
+    
+    //  console.log(inputValues)
+    localStorage.setItem("inputValues", JSON.stringify(inputValues))
+
+     
+
+});
+
+
+// WHEN I refresh the page
+// THEN the saved events persist
+
+$(window).on("unload", function() {
+    eventInput = $(".textarea").find("#area").val()
+    .text()
+    .trim()
+    console.log(eventInput)
+    localStorage.getItem("eventInput", JSON.stringify(inputValues));
+
+    (eventInput).setItem($(".textarea"))
+    eventInput.innerHTML = text;
+
+
+
+
+ });
+
 
 
 timeBlocksColor()
