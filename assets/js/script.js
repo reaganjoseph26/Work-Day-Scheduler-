@@ -52,8 +52,19 @@ var timeBlocksColor = function () {
 // });
 
 
+// WHEN I click the save button for that time block
+// THEN the text for that event is saved in local storage
 
- 
+
+    $(".saveBtn").click(function () {
+        inputValues = []
+        var eventInput = $("textarea").val()
+        inputValues.push(eventInput)
+
+        console.log(inputValues)
+        localStorage.setItem("inputValues", JSON.stringify(inputValues))
+    });
+
 
 timeBlocksColor()
 
