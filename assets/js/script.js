@@ -16,13 +16,14 @@ $(document).ready(function () {
         var $textarea = $(this).closest(".row").find(".textarea");
         inputValues[$textarea.attr("id")] = $textarea.val().trim()
         
+        
     
         // console.log(inputValues)
         localStorage.setItem("inputValues", JSON.stringify(inputValues))
     
     
     });
-    
+    console.log(inputValues);
     
     // WHEN I refresh the page
     // THEN the saved events persist
