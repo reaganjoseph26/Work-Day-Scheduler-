@@ -9,10 +9,13 @@ textarea{
   border: none;
   resize: none;
   color: #000000;
-  border-left: 1px solid black;
-  padding: 10px;
-  box-sizing: border-box;
+  padding: 5px;
+  width: inherit;
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+  height: inherit;
 }
+
 
 .jumbotron {
   text-align: center;

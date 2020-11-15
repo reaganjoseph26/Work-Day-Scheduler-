@@ -37,23 +37,21 @@ var timeBlocksColor = function () {
 // create on click events so when user clicks into timeblock, they can enter text
 // dynamically create a textarea in class col-10 when clicked  so it applys so all divs
 
-$(".text-content").on("click", function() {
+// $(".col-10").on("click", function() {
+
+//     var text = $(this)
+//     .text()
+//     .trim();
+//     var textInput = $("<textarea>")
+//     $(this).append(textInput)
+//     textInput.trigger("focus")
+//     .addClass("textarea")
+//     .val(text); 
 
 
-    var text = $(this)
-    .text()
-    .trim();
-    
-    var textInput = $("<textarea>")
-    $(this).replaceWith(textInput)
-    textInput.trigger("focus")
-    .addClass("textarea")
-    .val(text);
-    
+// });
 
-    
 
-})
 
  
 
