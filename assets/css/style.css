@@ -2,6 +2,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-color: #d6ebf0;
 }
 
 textarea{
@@ -74,8 +75,11 @@ textarea{
   transition: all .3s ease-in-out;
 }
 
-.iconify {
-  width: 30px;
+.col-1 {
+  background-color:pink;
 }
+
+
+
 
 
