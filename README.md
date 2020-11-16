@@ -22,7 +22,7 @@
 
 Deployed link: 
 
- ![Image](./assets\scriptScreenshot.png)
+ ![Image](Screenshot.png)
 
 
 
