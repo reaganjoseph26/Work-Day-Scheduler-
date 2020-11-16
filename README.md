@@ -20,7 +20,7 @@
 ## CSS
 * Add custom CSS to the page 
 
-Deployed link: 
+Deployed link: https://reaganjoseph26.github.io/Work-Day-Scheduler-/
 
 Screenshot:
  ![Image](assets/scriptScreenshot.png)
