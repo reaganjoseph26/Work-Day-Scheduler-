@@ -1,7 +1,7 @@
 # Work Day Scheduler Starter Code
 ## HMTL
 * create static buttom elements for icon within the row
-* Add CDN for icon https://code.iconify.design/1/1.0.7/iconify.min.js t
+* Add CDN for save icon https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css
 ## BOOTSTRAP
 * Use bootstrap to implement rows and columns
 * Use bootstrap classes to provide to style
@@ -22,6 +22,7 @@
 
 Deployed link: 
 
+Screenshot:
  ![Image](assets/scriptScreenshot.png)
 
 
